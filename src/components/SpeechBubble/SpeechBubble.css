@@ -1,0 +1,28 @@
+/* ── Speech Bubble ── */
+.speech-bubble {
+  position: absolute;
+  bottom: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1.5px solid var(--pink-100);
+  border-radius: 18px 18px 18px 6px;
+  padding: 10px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-mid);
+  white-space: nowrap;
+  z-index: 11;
+  box-shadow: 0 4px 16px rgba(233, 100, 148, 0.12);
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 28px;
+  border: 8px solid transparent;
+  border-top-color: rgba(255, 255, 255, 0.92);
+}

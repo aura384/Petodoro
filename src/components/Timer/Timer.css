@@ -1,0 +1,14 @@
+/* ── Clock (SVG overlay on wall) ── */
+.clock-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.clock-progress {
+  transition: stroke-dasharray 0.8s ease;
+}

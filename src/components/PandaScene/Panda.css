@@ -1,0 +1,54 @@
+/* ── Panda Wrapper ── */
+.panda-wrap {
+  position: absolute;
+  bottom: 32%;
+  left: 47%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 180px;
+  filter: drop-shadow(0 8px 22px rgba(245, 125, 173, 0.28));
+  z-index: 10;
+}
+
+.panda-wrap svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Mood animations ── */
+@keyframes pandaFloat {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+
+@keyframes pandaBounce {
+  0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
+  25%       { transform: translateY(-10px) rotate(-3deg) scale(1.04); }
+  75%       { transform: translateY(-6px) rotate(3deg) scale(1.02); }
+}
+
+@keyframes pandaSway {
+  0%, 100% { transform: rotate(0deg) translateY(0); }
+  30%       { transform: rotate(-4deg) translateY(2px); }
+  70%       { transform: rotate(4deg) translateY(2px); }
+}
+
+@keyframes pandaNom {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  25%       { transform: rotate(-5deg) scale(1.05); }
+  75%       { transform: rotate(5deg) scale(1.05); }
+}
+
+@keyframes zzzFloat {
+  0%   { opacity: 0.9; transform: translateY(0); }
+  100% { opacity: 0;   transform: translateY(-22px); }
+}
+
+.panda-wrap.idle   svg { animation: pandaFloat 4s ease-in-out infinite; }
+.panda-wrap.happy  svg { animation: pandaBounce 0.7s ease-in-out infinite; }
+.panda-wrap.sleepy svg { animation: pandaSway 5s ease-in-out infinite; }
+.panda-wrap.eating svg { animation: pandaNom 0.22s ease-in-out infinite; }
+
+.zzz-group {
+  animation: zzzFloat 2.8s ease-in-out infinite;
+}

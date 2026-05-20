@@ -1,0 +1,28 @@
+/* ── Global Reset & Variables ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --pink-50:  #fff0f4;
+  --pink-100: #ffd6e4;
+  --pink-200: #ffb3cc;
+  --pink-300: #ff85ad;
+  --pink-400: #f96090;
+  --pink-500: #e8497a;
+  --pink-600: #c93368;
+  --text-dark:  #4a2d3a;
+  --text-mid:   #8c5a70;
+  --text-light: #c490a8;
+  --font: 'Nunito', sans-serif;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--font);
+  background: #fde8f0;
+}
