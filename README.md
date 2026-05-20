@@ -1,6 +1,6 @@
 # Study Pet
 
-A cozy Pomodoro study companion with an animated panda friend!
+A cozy Pomodoro study companion with an animated panda friend. Explore it [here](https://petodoro.vercel.app/)!
 
 ## Project Structure
 
