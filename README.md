@@ -38,7 +38,7 @@ study-pet/
 │   │   └── formatTime.js        # MM:SS formatter
 │   ├── styles/
 │   │   └── global.css           # CSS variables, reset, font import
-│   ├── App.jsx                  # Root controller — wires all hooks + components
+│   ├── App.jsx                  # Root controller - wires all hooks + components
 │   └── index.js                 # React entry point
 └── package.json
 ```
@@ -56,7 +56,7 @@ Then open [http://localhost:3000](http://localhost:3000).
 
 - **25-minute Pomodoro timer** with 5-minute breaks
 - **Animated panda** with 4 moods: idle (floating), happy (bouncing), sleepy (swaying), eating (nom nom)
-- **Hunger system** — panda gets hungry over time, feed her strawberries!
+- **Hunger system** - panda gets hungry over time, feed her strawberries!
 - **Wall clock** with animated progress ring
 - **Cozy room background** with fairy lights, bookshelf, desk, and window
 
